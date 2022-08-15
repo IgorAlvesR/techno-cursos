@@ -22,4 +22,42 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+header {
+  background: #234;
+}
+
+header a {
+  color: white;
+}
+
+a.router-link-active {
+  color: #4b8;
+}
+
+nav {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo a {
+  font-size: 1.2rem;
+  color: white !important;
+}
+
+ul li {
+  display: inline-block;
+}
+
+li a {
+  padding: 0 10px;
+  margin-left: 10px;
+}
+</style>
