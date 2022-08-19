@@ -1,21 +1,21 @@
 <template>
   <div>
     <h1>Cursos</h1>
-    <div v-if="loading">Carregando...</div>
-    <pre v-else>
+    <PageLoading v-if="loading" />
+    <div v-else>
       {{ api }}
-    </pre>
+    </div>
   </div>
 </template>
 
 <script>
-import fetchData from '@/mixins/fetchData.js';
+import fetchData from '@/mixins/fetchData.js'
 
 export default {
   name: 'Cursos',
   mixins: [fetchData],
   created() {
-    this.fetchData('/cursos');
-  },
-};
+    this.fetchData('/cursos')
+  }
+}
 </script>
