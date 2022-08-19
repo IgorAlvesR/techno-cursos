@@ -10,8 +10,8 @@ export default {
       return fetch(`http://localhost:3000${endpoint}`)
         .then((r) => r.json())
         .then((r) => {
-          this.api = r
           setTimeout(() => {
+            this.api = r
             this.loading = false
           }, 2000)
         })
