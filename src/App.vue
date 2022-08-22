@@ -34,6 +34,10 @@ a {
   color: #234;
 }
 
+img {
+  max-width: 100%;
+}
+
 a.router-link-active {
   color: #4b8;
 }
@@ -51,5 +55,17 @@ a.router-link-active {
 
 .v-enter-active {
   transition: all 0.3s;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 400px);
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  .conteudo {
+    display: block;
+  }
 }
 </style>
