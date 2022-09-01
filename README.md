@@ -1,24 +1,33 @@
-# techno-cursos
+# Techno Cursos - Projeto desenvolvido no curso de Vue.Js da Origamid para praticar o uso do vue-router
 
-## Project setup
+## Descrição do Projeto
+
+<p >O projeto exibe uma série de cursos com suas respectivas aulas.</p>
+
+## Ferramentas utilizadas
+
+- vue
+- vue-router
+- eslint
+
+### Para instalar as dependências utilize o comando
+
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Para executar o projeto em ambiente de desenvolvimento utilize o comando
+
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Para instalar e executar o server
+
 ```
-yarn build
+npm install -g json-server
 ```
 
-### Lints and fixes files
 ```
-yarn lint
+json-server --watch ./api/api.json
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
